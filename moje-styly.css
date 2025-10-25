@@ -1,0 +1,84 @@
+/* Do tohoto souboru piš vlastní styly */
+.electronic_clock {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+.analog_clock {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 100px;
+}
+.digitalni__dvojtecka--smoothly {
+  animation: changeOpacity 1s linear 1s infinite running;
+}
+.digitalni__dvojtecka--sharply {
+  animation: changeOpacityFast 1s linear 1s infinite running;
+}
+/* Statický ukázkový čas 4:35:57 */
+.analogove__hodinova {
+  transform: rotate(137.5deg);
+}
+.analogove__minutova {
+  transform: rotate(215.7deg);
+}
+.analogove__vterinova {
+  transform: rotate(342deg);
+}
+.analogove__vterinova--first {
+  animation: rotate 6s linear infinite running;
+}
+.analogove__vterinova--second {
+  animation: rotate 600ms linear infinite running;
+}
+.analogove__minutova--second {
+  animation: rotate 6s linear infinite running;
+}
+.analogove__vterinova--third {
+  animation: rotate 60ms linear infinite running;
+}
+.analogove__minutova--third {
+  animation: rotate 600ms linear infinite running;
+}
+.analogove__hodinova--third {
+  animation: rotate 6000ms linear infinite running;
+}
+@keyframes changeOpacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes changeOpacityFast {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* @keyframes rotate_second {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
