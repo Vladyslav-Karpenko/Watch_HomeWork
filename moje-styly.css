@@ -1,4 +1,7 @@
 /* Do tohoto souboru piš vlastní styly */
+h2 {
+  text-align: center;
+}
 .electronic_clock {
   display: flex;
   gap: 100px;
@@ -33,7 +36,7 @@
   animation: rotate 600ms linear infinite running;
 }
 .analogove__minutova--second {
-  animation: rotate 6s linear infinite running;
+  animation: rotate 6000ms linear infinite running;
 }
 .analogove__vterinova--third {
   animation: rotate 60ms linear infinite running;
@@ -74,11 +77,3 @@
     transform: rotate(360deg);
   }
 }
-/* @keyframes rotate_second {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-} */
