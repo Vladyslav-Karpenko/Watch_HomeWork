@@ -33,3 +33,4 @@
 1. Добавьте вращение для часовой стрелки `.analogove__hodinova`.
    - Ускорьте все стрелки в 1000 раз.
    ![часовая стрелка](zadani/analogove-hodinova.gif)# Watch_HomeWork
+# Watch_HomeWork
